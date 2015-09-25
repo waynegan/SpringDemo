@@ -4,6 +4,10 @@
 <beans>
 
 
-<bean id = "Triangle" class="gq.bithub.wayne.springDemo.Triangle" />
+	<bean id="Triangle" class="gq.bithub.wayne.springDemo.Triangle">
+		<property name="type" value="Equilateral" />
+
+
+	</bean>
 
 </beans>
