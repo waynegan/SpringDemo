@@ -5,39 +5,39 @@ package gq.bithub.wayne.springDemo;
  *
  */
 public class Triangle {
-	private point pointA;
-	private point pointB;
-	public point getPointA() {
+	private Point pointA;
+	private Point pointB;
+	public Point getPointA() {
 		return pointA;
 	}
 
 
-	public void setPointA(point pointA) {
+	public void setPointA(Point pointA) {
 		this.pointA = pointA;
 	}
 
 
-	public point getPointB() {
+	public Point getPointB() {
 		return pointB;
 	}
 
 
-	public void setPointB(point pointB) {
+	public void setPointB(Point pointB) {
 		this.pointB = pointB;
 	}
 
 
-	public point getPointC() {
+	public Point getPointC() {
 		return pointC;
 	}
 
 
-	public void setPointC(point pointC) {
+	public void setPointC(Point pointC) {
 		this.pointC = pointC;
 	}
 
 
-	private point pointC;
+	private Point pointC;
 	
 	
 	public void draw() {

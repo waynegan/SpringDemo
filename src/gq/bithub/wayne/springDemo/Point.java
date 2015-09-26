@@ -1,6 +1,10 @@
 package gq.bithub.wayne.springDemo;
 
-public class point {
+/**
+ * @author wayne
+ *
+ */
+public class Point {
 	private int x;
 	public int getX() {
 		return x;
