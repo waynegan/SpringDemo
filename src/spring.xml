@@ -5,26 +5,27 @@
 
 
 	<bean id="Triangle" class="gq.bithub.wayne.springDemo.Triangle">
-		<property name="pointA">
-			<bean id="zeroPoint" class="gq.bithub.wayne.springDemo.Point">
-				<property name="X" value="0" />
-				<property name="y" value="0" />
-			</bean>
+		<property name="points">
+		<list>
+		<ref bean= "zeroPoint"/>
+		<ref bean= "point2"/>
+		<ref bean= "point3"/>
+		</list>
 		</property>
-		<property name="pointB">
-			<bean id="point2" class="gq.bithub.wayne.springDemo.Point">
-				<property name="X" value="-20" />
-				<property name="y" value="0" />
-			</bean>
-		</property>
-		<property name="pointC">
-			<bean id="point3" class="gq.bithub.wayne.springDemo.Point">
-				<property name="x" value="20" />
-				<property name="y" value="0" />
-			</bean>
-		</property>
+		
 	</bean>
-
-<alias name="triangle" alias="triangle-alias"/>
+	<bean id="zeroPoint" class="gq.bithub.wayne.springDemo.Point">
+		<property  name="X" value="0"  />
+		<property     name="y" value="0" />
+	</bean>
+	<bean id="point2" class="gq.bithub.wayne.springDemo.Point">
+		<property  name="X" value="-20"  />
+		<property     name="y" value="0" />
+	</bean>
+	<bean id="point3" class="gq.bithub.wayne.springDemo.Point">
+		<property     name="x" value="20" />
+		<property   name="y" value="0"  />
+	</bean>
+	
 
 </beans>
