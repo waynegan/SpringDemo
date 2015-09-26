@@ -5,8 +5,8 @@
 
 
 	<bean id="Triangle" class="gq.bithub.wayne.springDemo.Triangle">
-		<property name="type" value="Equilateral" />
-
+		<constructor-arg index="1" value="20" />
+		<constructor-arg index="0" value="21" /> <!-- index means position, type="java.lang.String ,int or somethingelse" -->
 
 	</bean>
 
