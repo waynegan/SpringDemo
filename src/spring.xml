@@ -6,8 +6,14 @@
 
 	<bean id="Triangle" class="gq.bithub.wayne.springDemo.Triangle">
 		<constructor-arg index="1" value="20" />
-		<constructor-arg index="0" value="21" /> <!-- index means position, type="java.lang.String ,int or somethingelse" -->
-
+		<constructor-arg index="0" value="21" /> 
+		<!-- 
+		<property name="type" value="20"/>
+		index means position, type="java.lang.String ,int or somethingelse"
+		
+		
+		 -->
+		
 	</bean>
 
 </beans>
