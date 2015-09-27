@@ -4,25 +4,18 @@
 <beans>
 
 
-	<bean id="Triangle" class="gq.bithub.wayne.springDemo.Triangle">
-		<property name="points">
-		<list>
-		<ref bean= "zeroPoint"/>
-		<ref bean= "point2"/>
-		<ref bean= "point3"/>
-		</list>
-		</property>
+	<bean id="Triangle" class="gq.bithub.wayne.springDemo.Triangle" autowire="byName">
 		
 	</bean>
-	<bean id="zeroPoint" class="gq.bithub.wayne.springDemo.Point">
+	<bean id="pointA" class="gq.bithub.wayne.springDemo.Point">
 		<property  name="X" value="0"  />
 		<property     name="y" value="0" />
 	</bean>
-	<bean id="point2" class="gq.bithub.wayne.springDemo.Point">
+	<bean id="pointB" class="gq.bithub.wayne.springDemo.Point">
 		<property  name="X" value="-20"  />
 		<property     name="y" value="0" />
 	</bean>
-	<bean id="point3" class="gq.bithub.wayne.springDemo.Point">
+	<bean id="pointC" class="gq.bithub.wayne.springDemo.Point">
 		<property     name="x" value="20" />
 		<property   name="y" value="0"  />
 	</bean>
